@@ -33,21 +33,21 @@ function App() {
 
   return (
     <div className="App">
-				<Practice1 />
-				<Practice2 />
-				<Practice3 />
-				<Practice4 />
-				<UserProfile user={user}/>
-				<Text color="red" fontSize="18px"/>
-				<button onClick={onClickFetchData} style={SButton}>データ取得</button>
-				{todos.map((todo) => (
-					<Todo 
-						key={todo.id}
-						title={todo.title} 
-						userId={todo.userId} 
-						completed={todo.completed}
-					/>
-				))} 
+			<Practice1 />
+			<Practice2 />
+			<Practice3 />
+			<Practice4 />
+			<UserProfile user={user}/>
+			<Text color="red" fontSize="18px"/>
+			<button onClick={onClickFetchData} style={SButton}>データ取得</button>
+			{todos.map((todo) => (
+				<Todo 
+					key={todo.id}
+					title={todo.title} 
+					userId={todo.userId} 
+					completed={todo.completed}
+				/>
+			))} 
     </div>
   );
 }
